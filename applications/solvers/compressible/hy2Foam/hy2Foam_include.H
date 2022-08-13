@@ -28,6 +28,7 @@
 #include "numerics/directionInterpolate.H"
 #include "numerics/KNP.H"
 #include "numerics/KT.H"
+//TODO: include new flux schemes for use in solver
 
 // --- MHD library
 #include "mhdModel.H"

@@ -34,6 +34,8 @@ std::map<word, FnPtr> fluxMap;
 fluxMap["Kurganov"] = KurganovFlux;
 fluxMap["Tadmor"] = TadmorFlux;
 
+//TODO: Implement reading of new flux schemes from case file and link to function
+
 word fluxScheme("Kurganov");
 FixedList<word, 2> blendedSchemes;
 
