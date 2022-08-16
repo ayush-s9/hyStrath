@@ -33,6 +33,8 @@ typedef void (*FnPtr)
 std::map<word, FnPtr> fluxMap;
 fluxMap["Kurganov"] = KurganovFlux;
 fluxMap["Tadmor"] = TadmorFlux;
+fluxMap["HLLC"] = HLLCFlux;
+fluxMap["AUSM+"] = AUSMpFlux; 
 
 //TODO: Implement reading of new flux schemes from case file and link to function
 
