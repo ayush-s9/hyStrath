@@ -47,6 +47,7 @@ if (mesh.schemesDict().readIfPresent("fluxScheme", fluxScheme))
     (
         (fluxScheme == "Tadmor")
      or (fluxScheme == "Kurganov")
+     or (fluxScheme == "HLLC")
     )
     {
         Info<< "fluxScheme: " << fluxScheme << endl;
@@ -67,7 +68,7 @@ if (mesh.schemesDict().readIfPresent("fluxScheme", fluxScheme))
                 "readFluxScheme"
             )   << "blendedSchemes: " << fluxScheme
                 << " is not a valid choice. "
-                << "Options are: Kurganov, and Tadmor."
+                << "Options are: Kurganov, HLLC and Tadmor."
                 << abort(FatalError);
         }
     }
@@ -77,7 +78,7 @@ if (mesh.schemesDict().readIfPresent("fluxScheme", fluxScheme))
         (
             "readFluxScheme"
         )   << "fluxScheme: " << fluxScheme
-            << " is not a valid choice. Options are: Kurganov, Tadmor, "
+            << " is not a valid choice. Options are: Kurganov, Tadmor, HLLC,"
             << "and blended"
             << abort(FatalError);
     }
