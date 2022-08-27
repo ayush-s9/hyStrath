@@ -200,3 +200,5 @@ case $input in
  exit 1
  ;;
 esac
+
+#//TODO: Add installer script for implemented solver

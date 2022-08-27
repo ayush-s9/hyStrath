@@ -133,7 +133,7 @@ void HLLCFlux(
         }
         else if (downgradeSingleTv)
         {
-            rhoEvkFlux[0] = phiv_neg * rho_neg * evk_neg[0] + rho_neg * mag(Sf) * s_neg * (evk_neg * (s_neg - u_neg) / (s_neg - uC) - evk_neg);
+            rhoEvkFlux[0] = phiv_neg * rho_neg * evk_neg[0] + rho_neg * mag(Sf) * s_neg * (evk_neg[0] * (s_neg - u_neg) / (s_neg - uC) - evk_neg[0]);
         }
         else
         {
@@ -162,7 +162,7 @@ void HLLCFlux(
         }
         else if (downgradeSingleTv)
         {
-            rhoEvkFlux[0] = phiv_pos * rho_pos * evk_pos[0] + rho_pos * mag(Sf) * s_pos * (evk_pos * (s_pos - u_pos) / (s_pos - uC) - evk_pos);
+            rhoEvkFlux[0] = phiv_pos * rho_pos * evk_pos[0] + rho_pos * mag(Sf) * s_pos * (evk_pos[0] * (s_pos - u_pos) / (s_pos - uC) - evk_pos[0]);
         }
         else
         {
